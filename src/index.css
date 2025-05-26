@@ -1,0 +1,123 @@
+/* Reset & Global Styles */
+:root {
+  --primary-blue: #007bff;
+  --light-blue-bg: #f0f6ff;
+  --main-bg: #f6f9fc;
+  --white: #ffffff;
+  --text-primary: #2e2e2e;
+  --text-muted: #777777;
+  --healthy-green: #28a745;
+  --alert-red: #dc3545;
+  --divider: #ddd;
+  --shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+h2, h3, h4 {
+  color: var(--text-primary);
+}
+p {
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .dashboard-main-row {
+    flex-direction: column;
+  }
+
+  .top-left-group {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  padding: 20px;
+  background-color: var(--white);
+  border-right: 1px solid var(--divider);
+  color: var(--text-primary);
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  color: var(--primary-blue);
+}
+.sidebar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 30px;
+}
+
+/* Placeholder styles for sections */
+.dashboard-main section {
+  background-color: #ffffff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+/* Activity bar chart */
+.bar-chart {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.bar-chart .bar {
+  width: 20px;
+  background-color: #007bff;
+  border-radius: 4px;
+}

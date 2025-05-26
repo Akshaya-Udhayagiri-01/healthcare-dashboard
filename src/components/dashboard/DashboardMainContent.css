@@ -1,0 +1,91 @@
+.dashboard-main-row {
+  display: flex;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* LEFT: Anatomy + Cards + Activity stacked vertically */
+.dashboard-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* RIGHT: Calendar + Schedule stacked vertically */
+.dashboard-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Side-by-side image and cards */
+.top-left-group {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Make health cards stack vertically */
+.health-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dashboard-left > * {
+  width: 100%;
+}
+.dashboard-right > * {
+  width: 100%;
+}
+
+.left-search-bar {
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+
+.left-search-bar input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  color: var(--text-primary);
+}
+
+
+.header-icons .icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.header-icons .user {
+  font-size: 14px;
+  color: #333;
+}
+
+.header-icons .add-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
