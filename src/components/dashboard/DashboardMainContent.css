@@ -4,7 +4,6 @@
   padding: 20px 0;
 }
 
-/* LEFT: Anatomy + Cards + Activity stacked vertically */
 .dashboard-left {
   flex: 1;
   display: flex;
@@ -12,7 +11,6 @@
   gap: 20px;
 }
 
-/* RIGHT: Calendar + Schedule stacked vertically */
 .dashboard-right {
   flex: 1;
   display: flex;
@@ -20,7 +18,6 @@
   gap: 20px;
 }
 
-/* Side-by-side image and cards */
 .top-left-group {
   display: flex;
   gap: 30px;
@@ -28,7 +25,6 @@
   flex-wrap: wrap;
 }
 
-/* Make health cards stack vertically */
 .health-cards {
   display: flex;
   flex-direction: column;
