@@ -1,5 +1,3 @@
-// src/components/Header.jsx
-
 export default function Header() {
   return (
     <div className="header-icons">
