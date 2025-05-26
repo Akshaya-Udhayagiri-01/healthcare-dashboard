@@ -1,12 +1,25 @@
+import { useState } from 'react'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import DashboardMainContent from './components/dashboard/DashboardMainContent'
 import './index.css'
 
 export default function App() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false)
+
   return (
     <div className="app-container">
-      <Sidebar />
+      {/* Hamburger visible on mobile */}
+      <button
+        className="hamburger"
+        onClick={() => setSidebarOpen(!isSidebarOpen)}
+      >
+        ☰
+      </button>
+
+      {/* Sidebar with toggle class */}
+      <Sidebar className={`sidebar ${isSidebarOpen ? 'open' : ''}`} />
+
       <div className="main-content">
         <DashboardMainContent />
       </div>
