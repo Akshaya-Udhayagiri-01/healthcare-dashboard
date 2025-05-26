@@ -27,47 +27,9 @@ body {
 h2, h3, h4 {
   color: var(--text-primary);
 }
+
 p {
   color: var(--text-muted);
-}
-
-@media (max-width: 768px) {
-  .dashboard-main-row {
-    flex-direction: column;
-  }
-
-  .top-left-group {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 220px;
-    height: 100vh;
-    background-color: var(--white);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 1000;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .sidebar.open {
-    transform: translateX(0);
-  }
-
-  .hamburger {
-    display: block;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    font-size: 24px;
-    background: none;
-    border: none;
-    z-index: 1100;
-  }
 }
 
 .app-container {
@@ -91,6 +53,15 @@ p {
   background-color: var(--white);
   border-right: 1px solid var(--divider);
   color: var(--text-primary);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 30px;
 }
 
 .sidebar h2 {
@@ -113,19 +84,13 @@ p {
 .sidebar ul li:hover {
   color: var(--primary-blue);
 }
-.sidebar-logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: var(--primary-blue);
-  margin-bottom: 30px;
-}
 
 .dashboard-main section {
-  background-color: #ffffff;
+  background-color: var(--white);
   margin: 20px 0;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow);
 }
 
 .bar-chart {
@@ -136,6 +101,49 @@ p {
 
 .bar-chart .bar {
   width: 20px;
-  background-color: #007bff;
+  background-color: var(--primary-blue);
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-main-row {
+    flex-direction: column;
+  }
+
+  .top-left-group {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    border-right: none;
+    border-bottom: 1px solid var(--divider);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--primary-blue);
+    z-index: 1100;
+    cursor: pointer;
+  }
+}
+
+.hamburger {
+  display: none;
 }
