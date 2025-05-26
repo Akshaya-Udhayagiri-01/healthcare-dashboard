@@ -9,7 +9,7 @@
   font-size: 13px;
   background-color: var(--white);
   box-shadow: var(--shadow);
-  border-left: 4px solid var(--primary-blue); /* or use green/red per card */
+  border-left: 4px solid var(--primary-blue);
   color: var(--text-primary);
 }
 
