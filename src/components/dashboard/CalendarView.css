@@ -87,8 +87,20 @@
 
 .has-appointment {
   background-color: #d0e8ff;
-  border: 1px solid var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  position: relative;
   font-weight: bold;
   background: linear-gradient(to bottom, #e6f3ff, #cce6ff);
   border-left: 4px solid #007bff;
+}
+
+.has-appointment::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-blue);
+  border-radius: 50%;
 }
