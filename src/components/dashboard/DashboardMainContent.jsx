@@ -9,7 +9,6 @@ import Header from '../Header'
 export default function DashboardMainContent() {
   return (
     <div className="dashboard-main-row">
-      {/* LEFT HALF */}
       <div className="dashboard-left">
   <div className="left-search-bar">
     <input type="text" placeholder="Search..." />
@@ -24,7 +23,6 @@ export default function DashboardMainContent() {
 </div>
 
 
-      {/* RIGHT HALF */}
       <div className="dashboard-right">
         <Header />
         <CalendarView />
