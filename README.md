@@ -1,6 +1,6 @@
 # Healthcare Dashboard
 
-A responsive healthcare admin dashboard built with React and Vite.
+A healthcare admin dashboard built with React and Vite.
 
 ## 🔗 Live Demo
 
@@ -11,11 +11,6 @@ A responsive healthcare admin dashboard built with React and Vite.
 - React (Vite)
 - CSS
 - Vercel (for deployment)
-
-## 📸 Screenshot
-
-![image](https://github.com/user-attachments/assets/567f22e5-9091-4955-a44e-7a41fe18a4b6)
-
 
 ## 📁 Features
 
