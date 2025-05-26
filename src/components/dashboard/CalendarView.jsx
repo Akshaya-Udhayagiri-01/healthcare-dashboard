@@ -25,7 +25,6 @@ export default function CalendarView() {
         })}
       </div>
 
-      {/* Static Appointment Cards */}
       <div className="appointment-cards">
         <div className="appointment-card">
           <h4>Dentist</h4>
