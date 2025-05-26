@@ -1,4 +1,4 @@
-export default function Sidebar() {
+export default function Sidebar({ className = '' }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">Healthcare.</div>
