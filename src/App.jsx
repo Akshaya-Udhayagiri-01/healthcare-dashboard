@@ -9,18 +9,9 @@ export default function App() {
 
   return (
     <div className="app-container">
-      {/* Hamburger visible on mobile */}
-      <button
-        className="hamburger"
-        onClick={() => setSidebarOpen(!isSidebarOpen)}
-      >
-        ☰
-      </button>
-
-      {/* Sidebar with toggle class */}
+      <button className="hamburger" onClick={() => setSidebarOpen(!isSidebarOpen)}> ☰ </button>
       <Sidebar className={`sidebar ${isSidebarOpen ? 'open' : ''}`} />
-
-      <div className="main-content">
+        <div className="main-content">
         <DashboardMainContent />
       </div>
     </div>
