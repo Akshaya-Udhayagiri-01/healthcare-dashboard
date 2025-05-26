@@ -10,18 +10,18 @@ export const healthCards = [
     title: 'Lungs',
     date: 'Jan 23',
     status: 'Inflamed',
-    statusColor: '#e74c3c' // red
+    statusColor: '#e74c3c' 
   },
   {
     title: 'Teeth',
     date: 'Jan 22',
     status: 'Normal',
-    statusColor: '#2ecc71' // green
+    statusColor: '#2ecc71' 
   },
   {
     title: 'Bone',
     date: 'Jan 21',
     status: 'Fractured',
-    statusColor: '#f39c12' // orange/yellow
+    statusColor: '#f39c12'
   }
 ]
