@@ -121,7 +121,6 @@ p {
     width: 220px;
     height: 100vh;
     transform: translateX(-100%);
-    transition: transform 0.3s ease;
     border-right: none;
     border-bottom: 1px solid var(--divider);
     background-color: var(--white);
