@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import DashboardMainContent from './components/dashboard/DashboardMainContent'
 import './index.css'
@@ -9,9 +8,16 @@ export default function App() {
 
   return (
     <div className="app-container">
-      <button className="hamburger" onClick={() => setSidebarOpen(!isSidebarOpen)}> ☰ </button>
+      <button
+        className="hamburger"
+        onClick={() => setSidebarOpen(!isSidebarOpen)}
+      >
+        ☰
+      </button>
+
       <Sidebar className={`sidebar ${isSidebarOpen ? 'open' : ''}`} />
-        <div className="main-content">
+
+      <div className="main-content">
         <DashboardMainContent />
       </div>
     </div>
