@@ -22,5 +22,5 @@ export default function Sidebar({ className = '' }) {
         <li><h2>Settings</h2></li>
       </ul>
     </aside>
-  );
+  )
 }
